@@ -4,10 +4,10 @@ def translate (frase):
     translation = "" #criando string para receber a tradução
     
     for letter in frase: #for para passar por cada letra
-        if letter.lower() in "aeiou": #vogais negativas
-            if letter.isupper(): #vogais positivas 
+        if letter.lower() in "aeiou": #vogais
+            if letter.isupper(): #se vogais maiusculas - > K 
                 translation = translation + "K"
-            else:
+            else: #caso não maiusculas - > k
                 translation = translation + "k"
         else:
             translation = translation + letter 
